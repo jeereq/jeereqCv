@@ -300,11 +300,41 @@ header h1 {
 }
 
 .block iframe,
-.block img,
+.block a,
 .block .block-right {
+    display: block;
     height: 100%;
     width: 50%;
     margin: auto;
+}
+
+.block a {
+    position: relative;
+}
+
+.block a:hover::before {
+    position: absolute;
+    content: '';
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background-color: #ef49464f;
+    border: .5px solid white;
+    border-radius: 5px;
+}
+
+.block a:hover+.block-right h1 {
+    color: #ef4a46;
+}
+
+.block a.red:hover::before {
+    background-color: #1c1c1c31;
+}
+
+.block a img {
+    height: 100%;
+    max-width: 100%;
     border-radius: 5px;
 }
 
