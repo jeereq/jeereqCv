@@ -1,0 +1,22 @@
+@keyframes bouleMove {
+    0% {
+        top: 15px;
+        left: 15px;
+    }
+    25% {
+        top: 15px;
+        left: calc(100% - 15px);
+    }
+    50% {
+        top: calc(100% - 15px);
+        left: calc(100% - 15px);
+    }
+    75% {
+        top: calc(100% - 15px);
+        left: 15px;
+    }
+    100% {
+        top: 15px;
+        left: 15px;
+    }
+}
