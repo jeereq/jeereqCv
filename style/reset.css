@@ -1,0 +1,35 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s;
+    font-family: ubuntu;
+}
+
+body {
+    scroll-behavior: smooth;
+    transition: width .3s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+main::-webkit-scrollbar {
+    width: 4px;
+    background-color: #181818;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #ef4946c0, transparent);
+    box-shadow: 2.5px 0 2.5px #181818;
+}
