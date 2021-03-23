@@ -310,6 +310,7 @@ header h1 {
 
 .block a {
     position: relative;
+    transition: .3s;
 }
 
 .block a:hover::before {
@@ -334,6 +335,7 @@ header h1 {
     background: radial-gradient(#ef4a46 20%, white);
     border-radius: 50%;
     transform: translate(-50%, -50%);
+    transition: .3s;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px #ef4a46, 0 0 80px #ef4a46;
     animation: bouleMove 3s infinite ease-in-out;
 }
@@ -361,10 +363,20 @@ header h1 {
 }
 
 .block-right p {
+    position: relative;
     padding: 17.5px;
     margin: 0 10px;
     color: #424345;
     box-shadow: 0 2.5px .5px #ef4a46;
+}
+
+.block-right p::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #0be40b;
 }
 
 .hidden.active {

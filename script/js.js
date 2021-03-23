@@ -14,7 +14,6 @@ window.onload = function() {
     //appel des fonctions 
 
     buttonLoad(button);
-    hello();
     hash();
     //les events
 
@@ -77,14 +76,12 @@ function hash() {
 
 // declaration des fonctions
 
-function hello() {
-    console.log("hello");
-}
 
 function buttonLoad(btn) {
     let parent = btn.parentNode;
     let left = (parent.clientWidth - btn.clientWidth) / 2;
     btn.style.marginLeft = left + 'px';
+    btn.style.transition = '1s';
 }
 
 function clickLien() {

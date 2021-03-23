@@ -15,7 +15,6 @@ window.onload = function () {
   var principal = document.querySelector('main'); //appel des fonctions 
 
   buttonLoad(button);
-  hello();
   hash(); //les events
 
   principal.addEventListener('scroll', function (e) {
@@ -92,14 +91,11 @@ function hash() {
 } // declaration des fonctions
 
 
-function hello() {
-  console.log("hello");
-}
-
 function buttonLoad(btn) {
   var parent = btn.parentNode;
   var left = (parent.clientWidth - btn.clientWidth) / 2;
   btn.style.marginLeft = left + 'px';
+  btn.style.transition = '1s';
 }
 
 function clickLien() {
