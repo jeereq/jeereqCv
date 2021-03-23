@@ -18,8 +18,8 @@ window.onload = function() {
     //les events
 
     principal.addEventListener('scroll', function(e) {
-        console.log(e)
-    })
+        console.log(e);
+    });
 
     hidden.addEventListener('click', function(e) {
         e.stopPropagation();
