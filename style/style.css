@@ -246,7 +246,7 @@ main .moi {
 }
 
 section {
-    height: 80vh;
+    height: 90vh;
 }
 
 section#works {
@@ -359,6 +359,7 @@ header h1 {
     text-align: left;
     padding: 17.5px;
     margin: 0 10px;
+    width: 90%;
     box-shadow: 0 2.5px .5px #ef4a46;
 }
 
@@ -367,6 +368,7 @@ header h1 {
     padding: 17.5px;
     margin: 0 10px;
     color: #424345;
+    width: 90%;
     box-shadow: 0 2.5px .5px #ef4a46;
 }
 
